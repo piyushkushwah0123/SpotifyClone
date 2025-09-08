@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+<body class="bg-black font-sans text-white flex flex-col min-h-screen overflow-hidden">
+
+ <div class="flex items-center justify-between px-4 py-2 bg-black ">
+  <div class="flex gap-2 text-2xl font-semibold">
+  <img src="https://imgs.search.brave.com/TEnJcl6pQnFHZ4c2dFZEzF0Vkd1A4CV059HHEkIMLVM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDExZTQ1OTU0/NTllYzVjMzBiOTcy/N2Y2NTkzYzEyM2Nm/ZDY5ZTIxZGUyZmEz/ZGEzYzY5ZmE4ZTcw/M2ZjMWViYS9vcGVu/LnNwb3RpZnkuY29t/Lw" alt="">
+   <h1>Spotify</h1>
+  </div>
+    <div class="flex items-center gap-3">
+      <button class="bg-neutral-800 p-3 rounded-full w-9 h-9  ml-80  cursor-pointer flex items-center justify-center">
+        <i class="text-2xl fa fa-home text-white "></i>
+      </button>
+     
+      <div class="w-150 flex items-center bg-neutral-800 px-3 py-2 rounded-full cursor-pointer">
+        <i class="fa fa-search text-gray-400 text-xl "></i>
+        <input type="text" placeholder="What do you want to play..." 
+               class="bg-transparent outline-none text-sm w-full text-white cursor-pointer"/>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-6">
+      <button class="bg-white text-black px-4 py-1 rounded-full font-bold text-xl cursor-pointer">Explore Premium</button>
+      <button class="text-m text-gray-300 hover:text-white cursor-pointer font-bold hover:underline">Install App</button>
+      <i class="text-2xl fa fa-bell text-md cursor-pointer"></i>
+      <i class="text-2xl fa-solid fa-people-group text-md cursor-pointer"></i>
+      <img src="https://thumbs.dreamstime.com/b/single-character-p-font-orange-yellow-color-alphabet-red-wall-design-illustration-red-maroon-colour-95737406.jpg" class="w-9 h-9 rounded-full cursor-pointer" alt="profile"/>
+    </div>
+  </div>
+
+
+   <div class="grid grid-cols-12  gap-3 min-h-screen p-1">
+      <div class="hidden md:block bg-neutral-800 md:col-span-4 rounded-xl h-160 p-3 overflow-y-auto">
+        <div class="flex justify-between  ">
+  <h3 class="text-2xl font-bold">Your Library</h3>
+<p class="bg-gray-600 rounded-2xl text-md ml-47 w-23 h-8 flex items-center justify-center gap-1 mt-2 cursor-pointer"><i class="fa-solid fa-plus text-sm mt-1"></i>
+  Create
+</p>
+<i class="fa-solid fa-compress mt-4 cursor-pointer"></i>
+ 
+    </div>
+        <div class="flex mt-4 gap-4 font-bold cursor-pointer ">
+          <div class="bg-gray-600 w-25 h-8 rounded-2xl flex items-center justify-center">Playlists</div>
+          <div class="bg-gray-600 w-25 h-8 rounded-2xl flex items-center justify-center">Artists</div>
+          <div class="bg-gray-600 w-25 h-8 rounded-2xl flex items-center justify-center">Albums</div>
+        </div>
+
+       <div class="flex items-center justify-between text-gray-400 mb-4 mt-5 cursor-pointer">
+        <div class="flex items-center space-x-2">
+          <i class="fa fa-search"></i>
+          <span>Search</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span>Recent</span>
+          <i class="fa fa-list"></i>
+        </div>
+      </div>
+<nav class="flex-1 overflow-y-auto space-y-2 cursor-pointer  ">
+       <div class="flex items-center mt-2 p-2 hover:bg-neutral-700 rounded-2xl cursor-pointer">
+   <div class="w-10 h-10 bg-indigo-600 rounded flex items-center justify-center">
+     <i class="fa fa-heart text-white"></i>
+   </div>
+   <div class="ml-3">
+     <p class="font-medium">Liked Songs</p>
+     <p class="text-sm text-gray-400">Playlist · 30 songs</p>
+   </div>
+   </div>
+         <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl ">
+          <img src="https://cdn.dnaindia.com/sites/default/files/2023/07/30/2601406-sn-final.jpg?im=FitAndFill=(1200,900)" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Sonu Nigam</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+          <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://img-cdn.thepublive.com/filters:format(webp)/mayapuri/media/post_attachments/kundli/udit-narayan/udit-narayan.jpg" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Udit narayan</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+          <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.bnSoxzbBEtBkebiw_0jaQgHaHX?w=260&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="">Badshah</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+          <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.HFcpBtqlsbrAC4LYn3INmgHaEK?w=305&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Atif aslam</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+          <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.B3-0UiPUtHv7MBeVgPJXQgHaFS?w=249&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Shubh</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+          <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.fzefxfZXkuDI50ugBJrHrgHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Honey Singh</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+          <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.WfwxtnIfu0O6UEn2S1AILAHaE6?w=258&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Lata Mangeshkar</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+          <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.aTqU_E7E4CRirOF0Cj3ewAHaFj?w=234&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Arjit Singh</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.jqmSM-FiIKQg-KlWRA-8dAHaEK?w=301&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Tony Kakkar</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.Y2lEYXHkymQT9oHVSBn99gHaEK?w=299&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Karan Aujhla</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3 mt-2 p-2 hover:bg-neutral-700 rounded-2xl">
+          <img src="https://th.bing.com/th/id/OIP.zuxE7kttXkgBvSmYacxRGgHaEK?w=313&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded">
+          <div>
+            <p class="font-awesome">Diljit Dosanjh</p>
+            <p class="text-sm text-gray-400">Artist</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="bg-neutral-800 col-span-12 md:col-span-10 lg:col-span-8 rounded-xl h-160 cursor-pointer overflow-y-auto">
+        <div class="flex gap-5 p-5">
+          <div class="bg-gray-700 w-15 h-10 rounded-2xl flex items-center justify-center">All</div>
+          <div class="bg-gray-600 w-25 h-10 rounded-2xl flex items-center justify-center">Music</div>
+          <div class="bg-gray-600 w-25 h-10 rounded-2xl flex items-center justify-center">Podcasts</div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-2xl ml-5 mb-5 font-bold">Popular Albums and Singers</div>
+          <div class="text-md mb-5 mr-3 font-bold cursor-pointer hover:underline">Show all</div>
+        </div>
+        <div class="grid overflow-hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-2 ml-2 cursor-pointer">
+  
+  <div class=" rounded-2xl overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP.Y2lEYXHkymQT9oHVSBn99gHaEK?w=299&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-40 object-cover">
+    <div class="p-2 text-center">
+      <p class="text-white font-semibold">For a reason<br>Karan Aujla,lkky</p>
+      <p class="text-gray-200 text-sm"></p>
+    </div>
+  </div>
+
+  <div class=" rounded-2xl overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIF.NuzNhPelX8fWWLBX21CO9A?w=159&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-40 object-cover">
+    <div class="p-2 text-center">
+      <p class="text-white font-semibold">Deva shree Ganesha</p>
+      <p class="text-gray-200 text-sm">Ajay Atul</p>
+    </div>
+  </div>
+
+  <div class=" rounded-2xl overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP._wafAiea7LtcADvF9LTD4wHaE8?w=247&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-40 object-cover">
+    <div class="p-2 text-center">
+      <p class="text-white font-semibold">Gajanana</p>
+      <p class="text-gray-200 text-sm">Sukhwinder Singh,Prashant ingole</p>
+    </div>
+  </div>
+
+  <div class=" rounded-2xl overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP.TIiJ8dQYPHyoeonIh7LueAHaD3?w=331&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-40 object-cover">
+    <div class="p-2 text-center">
+      <p class="text-white font-semibold">Azul</p>
+      <p class="text-gray-200 text-sm">Guru Randhawa</p>
+    </div>
+  </div>
+
+  <div class=" rounded-2xl overflow-hidden">
+    <img src="https://th.bing.com/th?id=OIF.pme7%2brKZ%2b9waYsHC3U9UEA&w=316&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-40 object-cover">
+    <div class="p-2 text-center">
+      <p class="text-white font-semibold">Araz Kiya Hai</p>
+      <p class="text-gray-200 text-sm">Anuv Jain</p>
+    </div>
+  </div>
+
+  <div class=" rounded-2xl overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP.JlbgH5jilk_n-DdhgPukvwHaFj?w=234&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-40 object-cover">
+    <div class="p-2 text-center">
+      <p class="text-white font-semibold">Dil ka jo haal hai</p>
+      <p class="text-gray-200 text-sm">Abhijeet,Shreya Goshal</p>
+    </div>
+  </div>
+</div>
+
+<div class="flex items-center justify-between mt-10">
+          <div class="text-2xl ml-5 mb-5 font-bold">Popular Artists</div>
+          <div class="text-md mb-5 mr-3 font-bold cursor-pointer hover:underline">Show all</div>
+        </div>
+  
+        <div class="grid overflow-hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6  cursor-pointer ">
+  
+  <div class="flex flex-col items-center">
+  <div class="w-30 h-30 rounded-full overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP.VpGKkk6IRDkhKXiSznB8jgHaFj?w=240&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class=" text-center">
+    <p class="text-white font-semibold">Honey Singh</p>
+   
+  </div>
+</div>
+
+
+  <div class="flex flex-col items-center">
+  <div class="w-30 h-30 rounded-full overflow-hidden">
+    <img src="https://wallpaperaccess.com/full/2747373.jpg" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class=" text-center">
+    <p class="text-white font-semibold">Karan Aujhla</p>
+   
+  </div>
+</div>
+
+  <div class="flex flex-col items-center">
+  <div class="w-30 h-30 rounded-full overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP.zmP0m-4hlGaP_-e8hEPWngHaHa?w=174&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class=" text-center">
+    <p class="text-white font-semibold">Neha Kakkar</p>
+   
+  </div>
+</div>
+
+  <div class="flex flex-col items-center">
+  <div class="w-30 h-30 rounded-full overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP.2TVUjrFFJjW8_du2Ez6bMAHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class=" text-center">
+    <p class="text-white font-semibold">Shehnaaz Gill</p>
+    
+  </div>
+</div>
+
+  <div class="flex flex-col items-center">
+  <div class="w-30 h-30 rounded-full overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP.An8v2WfuNZCyMyR3etG4swHaJQ?w=206&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class=" text-center">
+    <p class="text-white font-semibold">Badshah</p>
+   
+  </div>
+</div>
+
+  <div class="flex flex-col items-center ">
+  <div class="w-30 h-30 rounded-full overflow-hidden">
+    <img src="https://th.bing.com/th/id/OIP.HFcpBtqlsbrAC4LYn3INmgHaEK?w=305&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class=" text-center">
+    <p class="text-white font-semibold px-4">Atif Aslam</p>
+ </div>
+</div>
+</div>
+ 
+<div class="px-6 mt-10">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-2xl font-bold">Popular radio</h2>
+    <span class="text-md font-bold cursor-pointer hover:underline">Show all</span>
+  </div>
+ 
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <div class="bg-orange-300 rounded-lg p-2 cursor-pointer hover:bg-orange-500 transition">
+     
+      <div class="flex items-center space-x-2 mt-2">
+        <img src="https://th.bing.com/th/id/OIP.aTqU_E7E4CRirOF0Cj3ewAHaFj?w=234&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-16 h-16 rounded-full ">
+        <img src="https://th.bing.com/th/id/OIP.HFcpBtqlsbrAC4LYn3INmgHaEK?w=305&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded-full   -ml-4">
+        <img src="https://th.bing.com/th/id/OIP.sQP-cGGGiLdWwC5KdzaR2QHaHH?w=168&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-12 h-12 rounded-full -ml-4">
+      </div>
+      <h3 class="mt-3 text-xl font-bold">Arjit Singh</h3>
+      <p class="text-sm text-gray-900">With Sachin-Jigar, Atif Aslam, Shaarib Toshi and more</p>
+    </div>
+ 
+    <div class="bg-teal-300 rounded-lg p-2 cursor-pointer hover:bg-teal-500 transition">
+   
+      <div class="flex items-center space-x-2 mt-2">
+        <img src="https://th.bing.com/th/id/OIP.G5_u5n1UrhnS_XsxdMfWdQHaEs?w=293&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-16 h-16 rounded-full ">
+        <img src="https://th.bing.com/th/id/OIP.HFcpBtqlsbrAC4LYn3INmgHaEK?w=305&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded-full -ml-4">
+        <img src="https://th.bing.com/th/id/OIP.15Fgsqi3XxGJQR9BCIsOYwHaFk?w=215&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-12 h-12 rounded-full  -ml-4">
+      </div>
+      <h3 class="mt-3 text-xl font-bold">KK</h3>
+      <p class="text-sm text-gray-900">With Pritam,Atif aslam and more</p>
+    </div>
+
+   
+    <div class="bg-slate-300 rounded-lg p-2 cursor-pointer hover:bg-orange-200 transition">
+      
+      <div class="flex items-center space-x-2 mt-2">
+        <img src="https://th.bing.com/th/id/OIP.GZZwzPtr5e1qY2SwEk6W5wHaFj?w=227&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-16 h-16 rounded-full ">
+        <img src="https://th.bing.com/th/id/OIP.tr38sxpM2y-obbFsPoEHTwHaE8?w=257&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded-full  -ml-4">
+        <img src="https://th.bing.com/th/id/OIP.oZRFA9rbO88nnpnAAoRA3gHaFj?w=227&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-12 h-12 rounded-full -ml-4">
+      </div>
+      <h3 class="mt-3 text-xl font-bold">Alka yagnik</h3>
+      <p class="text-sm text-gray-900">With Kumar Sanu, Vinod Rathod, udit narayan and more</p>
+    </div>
+ 
+    <div class="bg-yellow-200 rounded-lg p-4 cursor-pointer hover:bg-yellow-500 transition">
+       
+      <div class="flex items-center space-x-2 mt-2">
+        <img src="https://th.bing.com/th/id/OIP.WpXKklBeuhw4H4On0gZKPQHaFj?w=240&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-16 h-16 rounded-full ">
+        <img src="https://th.bing.com/th/id/OIP.7IY-uZfe3-oYBR3AOs-DUwHaK6?w=128&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-10 h-10 rounded-full  -ml-4">
+        <img src="https://th.bing.com/th/id/OIP.bnSoxzbBEtBkebiw_0jaQgHaHX?w=262&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-12 h-12 rounded-full -ml-4">
+      </div>
+      <h3 class="mt-3 text-xl font-bold">Yo Yo Honey Singh</h3>
+      <p class="text-sm text-gray-900">With Badshah,Hardy Sandhu and more</p>
+    </div>
+</div>
+   <div>
+<br>
+<br>
+
+<hr class="border-1 border-gray-600">
+
+<footer class=" w-full h-full px-8 py-8">
+  <div class="grid grid-cols-2 md:grid-cols-5  w-full">
+    <div>
+      <h3 class="text-white font-semibold mb-3">Company</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Jobs</a></li>
+        <li><a href="#" class="hover:underline">For the Record</a></li>
+      </ul>
+    </div>
+
+ 
+    <div>
+      <h3 class="text-white font-semibold mb-3">Communities</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:underline">For Artists</a></li>
+        <li><a href="#" class="hover:underline">Developers</a></li>
+        <li><a href="#" class="hover:underline">Advertising</a></li>
+        <li><a href="#" class="hover:underline">Investors</a></li>
+        <li><a href="#" class="hover:underline">Vendors</a></li>
+      </ul>
+    </div>
+
+   
+    <div>
+      <h3 class="text-white font-semibold mb-3">Useful links</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:underline">Support</a></li>
+        <li><a href="#" class="hover:underline">Free Mobile App</a></li>
+        <li><a href="#" class="hover:underline">Popular By Country</a></li>
+        <li><a href="#" class="hover:underline">Import Your Music</a></li>
+
+      </ul>
+    </div>
+
+   
+    <div>
+      <h3 class="text-white font-semibold mb-3">Spotify Plans</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:underline">Premium Individual</a></li>
+        <li><a href="#" class="hover:underline">Premium Duo</a></li>
+        <li><a href="#" class="hover:underline">Premium Family</a></li>
+        <li><a href="#" class="hover:underline">Premium Student</a></li>
+        <li><a href="#" class="hover:underline">Spotify Free</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="flex space-x-4 items-start md:justify-end text-gray-400">
+      <a href="#" class="bg-neutral-800 p-3 rounded-full hover:bg-neutral-700">
+        <i class="fab fa-instagram text-3xl"></i>
+      </a>
+      <a href="#" class="bg-neutral-800 p-3 rounded-full hover:bg-neutral-700">
+        <i class="fab fa-facebook text-3xl"></i>
+      </a>
+      <a href="#" class="bg-neutral-800 p-3 rounded-full hover:bg-neutral-700">
+        <i class="fab fa-twitter text-3xl"></i>
+      </a>
+    </div>
+  </div>
+
+
+ 
+</footer>
+  </div>
+</div>
+</div>
+
+<footer class="fixed bottom-0 left-0 w-full h-20 bg-neutral-900 border-t border-neutral-800 flex items-center justify-between px-6">
+
+    <div class="flex items-center space-x-3 cursor-pointer">
+      <img src="https://th.bing.com/th/id/OIP.Oz6x7toig1EoaWt2V9XBIgHaEK?w=324&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="w-14 h-14 rounded">
+      <div class="cursor-pointer">
+        <p class="font-semibold">Love</p>
+        <p class="text-sm text-gray-400">Shubh</p>
+      </div>
+    </div>
+     
+    <div class="flex flex-col items-center cursor-pointer">
+      <div class="flex items-center space-x-4">
+        <i class="fa fa-random"></i>
+        <i class="fa fa-step-backward"></i>
+        <i class="fa fa-play-circle text-2xl"></i>
+        <i class="fa fa-step-forward"></i>
+        <i class="fa fa-redo"></i>
+      </div>
+      <div class="flex items-center space-x-2 mt-2 w-96 cursor-pointer">
+        <span class="text-xs">1:11</span>
+        <div class="bg-neutral-600 h-1 flex-1 rounded ">
+          <div class="bg-white h-1 w-2/4 rounded"></div>  
+        </div>
+        <span class="text-xs">2:25</span>
+      </div>
+    </div>
+           
+    <div class="flex items-center space-x-3 cursor-pointer">
+      <i class="fa fa-volume-up"></i>
+      <div class="bg-neutral-600 h-1 w-24 rounded">
+        <div class="bg-white h-1 w-3/4 rounded">
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
